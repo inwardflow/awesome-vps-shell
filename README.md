@@ -4,7 +4,7 @@
 
 ### ⚠ 免责声明
 
-尽管我已经审查过脚本，但难免有疏漏，请自行甄别使用。
+脚本审查过程中难免有疏漏，请自行甄别使用。
 
 如有发现无法使用 / 有后门等情况，请在 issue 中及时提出，非常感谢！
 
@@ -19,7 +19,7 @@
 * [宝塔面板](https://www.bt.cn/) - 服务器运维面板
 
 ```shell
-url=https://download.bt.cn/install/install_lts.sh;if [ -f /usr/bin/curl ];then curl -sSO $url;else wget -O install_lts.sh $url;fi;bash install_lts.sh
+if [ -f /usr/bin/curl ];then curl -sSO https://download.bt.cn/install/install_panel.sh;else wget -O install_panel.sh https://download.bt.cn/install/install_panel.sh;fi;bash install_panel.sh
 ```
 
 * [mdserver-web](https://github.com/midoks/mdserver-web) - 魔改宝塔 Linux 服务面板
